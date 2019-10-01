@@ -10,7 +10,7 @@ def heapsort(list)
   end
   n -= 1
   while n > 0
-    list[0], list[n] = list[n], list[0]
+    swap(list, 0, n)
     n -= 1
     heapify(list, 0, n)
   end
